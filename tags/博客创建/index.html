@@ -436,17 +436,17 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
     new Valine({
       el         : '#valine-comments',
       verify     : false,
-      notify     : false,
+      notify     : true,
       appId      : 'm8cJBY6MUVBVzBH9co6zKRST-gzGzoHsz',
       appKey     : 's9RI1P3kSC7b825HgugkjAgi',
-      placeholder: "Just go go",
+      placeholder: "欢迎评论",
       avatar     : 'mm',
       meta       : guest,
       pageSize   : '10' || 10,
       visitor    : false,
       lang       : '' || 'zh-cn',
       path       : location.pathname,
-      recordIP   : false,
+      recordIP   : true,
       serverURLs : ''
     });
   }, window.Valine);
