@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/10/07/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>世界你好</category>
+      </categories>
+      <tags>
+        <tag>世界你好</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>测试</title>
+    <url>/2021/10/08/%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<p>##正文</p>
+<span id="more"></span>
+<p><img src="https://i.loli.net/2021/08/16/6tda3IM8PRZ1GvT.jpg" alt="测试图片"><br>测试</p>
+]]></content>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客创建</title>
+    <url>/2021/10/09/%E4%BD%BF%E7%94%A8%E6%89%8B%E6%9C%BA%E5%88%9B%E5%BB%BAhexo+next%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="Hexo搭建步骤"><a href="#Hexo搭建步骤" class="headerlink" title="Hexo搭建步骤"></a>Hexo搭建步骤</h1><p>下载termux<br>安装Git<br>安装Node.js<br>安装Hexo<br>GitHub创建个人仓库<br>生成SSH添加到GitHub<br>将hexo部署到GitHub<br>设置个人域名<br>发布文章</p>
+<span id="more"></span>
+
+<h2 id="下载termux"><a href="#下载termux" class="headerlink" title="下载termux"></a>下载<a href="https://termux.com/">termux</a></h2><p>打开termux，安装git,node.js,hexo<br>    打开Termux，输入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pkg install nodejs</span><br></pre></td></tr></table></figure>
+<p>安装Nodejs，在输入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pkg install git</span><br></pre></td></tr></table></figure>
+<p>安装Git。<br>过程会出现一个提示，输入y回车确认即可。<br>按照Hexo官网提示安装Hexo。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br></pre></td></tr></table></figure>
+<p>安装hexo部署插件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h2 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h2><p>打开文件管理器，本人使用<a href="https://wwa.lanzoui.com/iEVEnv2fupi">MT文件管理器</a><br>从根目录开始打开文件地址<br>/data/data/com.termux/files/home/blog/<br>打开_config.yml文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"> title: 博客名称</span><br><span class="line"> subtitle: 签名</span><br><span class="line"> description: 简介</span><br><span class="line"> keywords: </span><br><span class="line"> author: 昵称</span><br><span class="line"> language: zh-CN # next主题语言</span><br><span class="line"></span><br><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: https://账号昵称.github.io # 此处填写github昵称</span><br></pre></td></tr></table></figure>
+<p>文件底部填写</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://账号昵称:个人令牌@github.com/账号昵称/账号昵称.github.io.git</span><br><span class="line">  message: master # 此处也可以填写main</span><br></pre></td></tr></table></figure>
+
+<h1 id="未写完"><a href="#未写完" class="headerlink" title="未写完"></a>未写完</h1><h1 id="hexo写作技巧"><a href="#hexo写作技巧" class="headerlink" title="hexo写作技巧"></a>hexo写作技巧</h1><p>阅读全文按钮<br>将以下代码添加到文章第一个段落之后</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># &lt;!--more--&gt; # 不带#号</span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>博客创建</tag>
+      </tags>
+  </entry>
+</search>
